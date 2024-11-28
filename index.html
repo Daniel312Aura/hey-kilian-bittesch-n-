@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Hintergrundvideo Webseite</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: black;
+        }
+        video {
+            position: absolute;
+            width: 400px; /* Breite des Videos anpassen */
+            height: 300px; /* Höhe des Videos anpassen */
+            top: 50%; /* Position des Videos anpassen */
+            left: 50%; /* Position des Videos anpassen */
+            transform: translate(-50%, -50%);
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <video autoplay loop muted>
+        <source src="kurzvideo.mp4" type="video/mp4">
+    </video>
+</body>
+</html>
